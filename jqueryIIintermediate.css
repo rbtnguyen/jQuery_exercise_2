@@ -1,0 +1,30 @@
+img{
+	width: 200px;
+	height: auto;
+}
+
+li{
+	width: 200px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#puzzle ul{
+	width: 200px;
+}
+
+.container{
+	width: 960px;
+	margin: 0px auto;
+}
+
+.puzzle{
+	/*width: 700px;*/
+	margin-left: 100px;
+	margin-top: 50px;
+
+}
+
+.catz{
+	display: none;
+}

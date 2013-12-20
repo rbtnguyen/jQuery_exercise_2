@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+	<title>jQuery Intermediate</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="jqueryIIintermediate.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#sortable').sortable();
+			$('.ninjas').click(function(){
+				$(this).hide();
+				$(this).next().show();
+			});
+			$('.catz').click(function(){
+				$(this).hide();
+				$(this).prev().show();
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+	<h1>jQuery - Exercise 2</h1>
+		<div class="puzzle">		
+			<ul id="sortable">
+				<li><img class="ninjas" src="assets/img/ninja_1.png"><img class="catz" src="assets/img/cat_1.png"></li>	
+				<li><img class="ninjas" src="assets/img/ninja_2.png"><img class="catz" src="assets/img/cat_2.png"></li>
+				<li><img class="ninjas" src="assets/img/ninja_3.png"><img class="catz" src="assets/img/cat_3.png"></li>
+				<li><img class="ninjas" src="assets/img/ninja_4.png"><img class="catz" src="assets/img/cat_4.png"></li>
+				<li><img class="ninjas" src="assets/img/ninja_5.png"><img class="catz" src="assets/img/cat_5.png"></li>	
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
